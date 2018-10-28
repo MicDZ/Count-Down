@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <head>
-  <h3>距离长沙市中考仅有：</h3>
-  <h1>
-    <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new
-      Date("6/16/2019 8:30:00");
-      Y=new Date();T=(X.getTime()-Y.getTime());M=24*60*60*1000;
-      a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
-      runtime_span.innerHTML=A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
-    </script>
-  </h1>
-</head>
+
+<div class="gn_box">
+		<h1>2019年长沙市中考倒计时</h1>
+        <h4>目前距离2019年高考还有</h4>
+		<div id="CountMsg" class="HotDate">
+			<span id="t_d">221 天</span>
+			<span id="t_h">11 时</span>
+			<span id="t_m">37 分</span>
+			<span id="t_s">32 秒</span>
+		</div>
+	<script type="text/javascript">
+		function getRTime(){
+			var EndTime= new Date('2019/06/18 09:00:00'); //截止时间
+			var NowTime = new Date();
+			var t =EndTime.getTime() - NowTime.getTime();
+			var d=Math.floor(t/1000/60/60/24);
+			var h=Math.floor(t/1000/60/60%24);
+			var m=Math.floor(t/1000/60%60);
+			var s=Math.floor(t/1000%60);
+	
+			document.getElementById("t_d").innerHTML = d + " 天";
+			document.getElementById("t_h").innerHTML = h + " 时";
+			document.getElementById("t_m").innerHTML = m + " 分";
+			document.getElementById("t_s").innerHTML = s + " 秒";
+		}
+		setInterval(getRTime,1000);
+		</script>
+	</div>
+  
+  </head>
