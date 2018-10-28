@@ -1,2 +1,3 @@
-# Count-down
-Countdown to the entrance examination
+做了一个简单的中考倒计时
+
+以后有时间会加上UI的。
