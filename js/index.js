@@ -24,6 +24,11 @@ window.addEventListener("load", () => {
 
 		const seconds = Math.floor(t/1000%60);
 		second.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+		var pass = Math.floor(((NowTime.getTime() / 1000) + 28800) % 86400) / 864;
+    	pass = pass.toFixed(2); 
+		document.getElementById("progress").value=pass;
+		document.querySelector(".data>span").innerHTML=pass+" % ";
 	};
 	getTime();
 
