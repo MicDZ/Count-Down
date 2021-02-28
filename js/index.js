@@ -17,14 +17,15 @@ window.addEventListener("load", () => {
 	
 	const getTime = () => {
 		var EndTime=new Date("2022/06/07 08:00");
-		var name="2022湖南省高考";
+		var name="2022高考";
 
 
 	
-		if(getQueryVariable("date")==false||getQueryVariable("time")==false||getQueryVariable("name")==false) EndTime= new Date("2022/06/07 08:00"),name="2022湖南省高考";
+		if(getQueryVariable("date")==false||getQueryVariable("time")==false||getQueryVariable("name")==false) EndTime= new Date("2022/06/07 08:00"),name="2022高考";
 		else EndTime= new Date(getQueryVariable("date")+" "+getQueryVariable("time")),name=decodeURI(getQueryVariable("name")); 
 
 		document.getElementById("name").innerHTML="距离"+decodeURI(name)+"还有";
+		document.getElementById("title").innerHTML=name+"倒计时";
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
        
