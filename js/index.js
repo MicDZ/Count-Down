@@ -57,3 +57,12 @@ window.addEventListener("load", () => {
 
 
 });
+function change(a){
+    var css=document.getElementById("css");
+    if (a == 1) {
+        css.setAttribute("href","css/night.css");
+    }
+    if (a == 2) {
+        css.setAttribute("href","css/light.css");
+    }
+}
