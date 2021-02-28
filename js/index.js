@@ -1,12 +1,30 @@
+function getQueryVariable(variable){
+	let query = window.location.search.substring(1);
+	let vars = query.split("&");
+	for (let i=0;i<vars.length;i++) {
+			let pair = vars[i].split("=");
+			if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+
 window.addEventListener("load", () => {
     const day = document.querySelector(".day>span");
 	const hour = document.querySelector(".hour>span");
 	const minute = document.querySelector(".minute>span");
 	const second = document.querySelector(".second>span");
-
+	
+	
 	const getTime = () => {
+		var EndTime=new Date("2022/06/07 08:00");
+		var name="2022湖南省高考";
 
-        var EndTime= new Date('2022/06/07 08:00:00'); 
+
+	
+		if(getQueryVariable("date")==false||getQueryVariable("time")==false||getQueryVariable("name")==false) EndTime= new Date("2022/06/07 08:00"),name="2022湖南省高考";
+		else EndTime= new Date(getQueryVariable("date")+" "+getQueryVariable("time")),name=decodeURI(getQueryVariable("name")); 
+
+		document.getElementById("name").innerHTML="距离"+name+"还有";
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
        
