@@ -107,7 +107,7 @@ hr {
 			border-radius: 5px;
 		}
 		progress::-webkit-progress-bar{
-			border-radius: 3px;
+			border-radius: 5px;
 			background-color:#d7d7d7;
 	   }
 	   progress::-webkit-progress-value{
@@ -119,6 +119,7 @@ hr {
 	
 }
 .switch {
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -127,6 +128,7 @@ hr {
 	margin:10px auto;
 	opacity: 0.8;
 	.btn {
+		
 		align-items: center;
 		border-radius: 5px;
 		border: 0.5px solid #555;
