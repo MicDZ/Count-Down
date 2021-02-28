@@ -66,3 +66,6 @@ function change(a){
         css.setAttribute("href","css/light.css");
     }
 }
+function jump(){
+	window.location.href="https://github.com/MicDZ/Count-down";
+   }
