@@ -62,13 +62,14 @@ hr {
       font-family: 'Share Tech Mono', monospace;
       position: relative;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      width: 60px;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
       margin: 0 20px; }
       .container .clock .clock-item div {
         font-size: 20px;
-        color: #f8bfbf; }
+        color: #f8bfbf;
+        letter-spacing: 5px; }
       .container .clock .clock-item span {
         font-size: 60px;
         font-weight: 900;

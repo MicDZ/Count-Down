@@ -9,10 +9,10 @@ function getQueryVariable(variable){
 }
 
 window.addEventListener("load", () => {
-    const day = document.querySelector(".day>span");
-	const hour = document.querySelector(".hour>span");
-	const minute = document.querySelector(".minute>span");
-	const second = document.querySelector(".second>span");
+    const day = document.querySelector(".day");
+	const hour = document.querySelector(".hour");
+	const minute = document.querySelector(".minute");
+	const second = document.querySelector(".second");
 	
 	
 	const getTime = () => {
