@@ -14,8 +14,8 @@ window.addEventListener("load", () => {
 	const minute = document.querySelector(".minute");
 	const second = document.querySelector(".second");
 	
-	if(decodeURI(getQueryVariable("mode"))=="night") change(1);
-	else change(2);
+	if(decodeURI(getQueryVariable("mode"))=="light") change(2);
+	else change(1);
 
 	const getTime = () => {
 		var EndTime=new Date("2022/06/07 08:00");
