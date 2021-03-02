@@ -6,19 +6,23 @@
 
 本项目的样式参考了 [https://gitee.com/QH_ayang/digital-time-unit](https://gitee.com/QH_ayang/digital-time-unit)
 
-# URL参数
+## URL参数
 
-`date`为倒计时的目标日期，格式为`YYYY/MM/DD`
+* `date`为倒计时的目标日期，格式为`YYYY/MM/DD`
 
-`time`为倒计时的目标时刻，格式为`HH:MM`
+* `time`为倒计时的目标时刻，格式为`HH:MM`
 
-`name`为倒计时的标题
+* `name`为倒计时的标题
+
+* `mode`为倒计时的样式选择，格式为`light`或`night`
 
 参数之间用`&`分隔
 
-以上三个参数任意缺少一个都会将倒计时自动切换为2022高考倒计时
+`date`、`time`、`name`任意缺少一个都会将倒计时自动切换为2022高考倒计时
 
-# 使用实例
+`mode`不设置则默认为`night`
+
+## 使用实例
 
 获取2022高考倒计时：
 

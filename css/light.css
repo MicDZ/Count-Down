@@ -30,7 +30,8 @@ hr {
   margin: 30px auto;
   background-color: #e5e3e8;
   border-radius: 5px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); }
   .container .menu {
     display: flex;
     align-items: center;
@@ -66,7 +67,9 @@ hr {
       .container .clock .clock-item div {
         font-size: 20px;
         color: #ccc;
-        letter-spacing: 5px; }
+        letter-spacing: 5px;
+        color: #f8bfbf;
+        margin-top: 15px; }
       .container .clock .clock-item span {
         font-size: 60px;
         font-weight: 700;
@@ -111,14 +114,15 @@ hr {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 4px 20px;
+    margin: 4px 15px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer; }
   .switch .Night:hover {
     background-color: #555;
     color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px; }
   .switch .Light {
     opacity: 0.6;
     cursor: not-allowed; }

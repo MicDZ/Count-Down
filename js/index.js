@@ -14,7 +14,9 @@ window.addEventListener("load", () => {
 	const minute = document.querySelector(".minute");
 	const second = document.querySelector(".second");
 	
-	
+	if(decodeURI(getQueryVariable("mode"))=="night") change(1);
+	else change(2);
+
 	const getTime = () => {
 		var EndTime=new Date("2022/06/07 08:00");
 		var name="2022高考";

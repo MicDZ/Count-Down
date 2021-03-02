@@ -85,6 +85,7 @@ hr {
 				font-size: 20px;
 				color: rgb(248, 191, 191);
 				letter-spacing: 5px;
+				margin-top: 15px;
 
 			}
 			span {
@@ -136,7 +137,7 @@ hr {
 	opacity: 0.8;
 	.btn {
 		background-color: #2C3E50;
-  color: #fff;
+  		color: #fff;
 		outline: none;
 		border: 1px solid #ccc;
 		padding: 10px 20px;
@@ -144,7 +145,7 @@ hr {
 		text-decoration: none;
 		display: inline-block;
 		font-size: 18px;
-		margin: 4px 20px;
+		margin: 4px 15px;
 		-webkit-transition-duration: 0.4s; /* Safari */
 		transition-duration: 0.4s;
 		cursor: pointer;
@@ -156,7 +157,9 @@ hr {
 		color: #000;
 		opacity: 0.3;
 		box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24),0 17px 50px 0 rgba(255,255,255,0.19);
-	  }
+		border-radius: 10px;
+  
+	}
 	  
 	  .Night {
 		opacity: 0.3;
