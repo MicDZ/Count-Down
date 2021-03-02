@@ -30,7 +30,9 @@ window.addEventListener("load", () => {
 		document.getElementById("title").innerHTML=name+"倒计时";
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
-       
+		
+		if(t<0) EndTime= new Date("2022/06/07 08:00"),name="2022高考",t =EndTime.getTime() - NowTime.getTime();
+
         const days = Math.floor(t/1000/60/60/24);
 
 
