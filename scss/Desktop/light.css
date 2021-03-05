@@ -30,8 +30,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
-  height: 650px;
+  width: 700px;
+  height: 320px;
   margin: 30px auto;
   background-color: #e5e3e8;
   border-radius: 5px;
@@ -66,8 +66,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 600px;
+  width: 600px;
+  height: 150px;
   background-color: #292929;
   opacity: 0.6;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
@@ -81,7 +81,6 @@ hr {
   align-items: center;
   width: 600px;
   margin: 0 20px;
-  flex-direction: column;
 }
 
 .container .clock .clock-item div {
@@ -109,7 +108,7 @@ hr {
 }
 
 .container .prog progress {
-  width: 300px;
+  width: 500px;
   height: 30px;
   border: none;
   background-color: #d7d7d7;
@@ -131,7 +130,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 700px;
   height: 10px;
   margin: 10px auto;
   opacity: 0.8;

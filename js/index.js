@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 	const second = document.querySelector(".second");
 	
 
-	if(decodeURI(getQueryVariable("mode"))) mode=getQueryVariable("mode");
+	if(decodeURI(getQueryVariable("mode"))!="false") mode=getQueryVariable("mode");
 	else mode="light";
 
 	const getTime = () => {
