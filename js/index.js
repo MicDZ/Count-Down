@@ -8,16 +8,28 @@ function getQueryVariable(variable){
 	return(false);
 }
 
+var type="Desktop",mode="light";
+
+
+
 window.addEventListener("load", () => {
     const day = document.querySelector(".day");
 	const hour = document.querySelector(".hour");
 	const minute = document.querySelector(".minute");
 	const second = document.querySelector(".second");
 	
-	if(decodeURI(getQueryVariable("mode"))=="light") change(2);
-	else change(1);
+
+	if(decodeURI(getQueryVariable("mode"))) mode=getQueryVariable("mode");
+	else mode="light";
 
 	const getTime = () => {
+		
+		if(document.body.clientWidth>=700) type="Desktop";
+		else type="Mobile";
+		
+		UpdateCss();
+
+
 		var EndTime=new Date("2022/06/07 08:00");
 		var name="2022高考";
 
@@ -57,19 +69,25 @@ window.addEventListener("load", () => {
 
 	let timer = setInterval(() => {
 		getTime();
-	}, 1000);
+	}, 100);
 
 
 });
+
 function change(a){
-    var css=document.getElementById("css");
-    if (a == 1) {
-        css.setAttribute("href","css/night.css");
+	if (a == 1) {
+        mode="night";
+		
     }
     if (a == 2) {
-        css.setAttribute("href","css/light.css");
+        mode="light";
     }
 }
+
+function UpdateCss() {
+	css.setAttribute("href","css/"+type+"/"+mode+".css");
+}
+
 function jump(){
 	window.location.href="https://github.com/MicDZ/Count-down";
    }

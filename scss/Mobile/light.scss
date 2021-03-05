@@ -31,8 +31,8 @@ hr {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;
-	height: 320px;
+	width: 350px;
+	height: 650px;
 	margin: 30px auto;
 	background-color: #e5e3e8;
 	border-radius: 5px;
@@ -64,11 +64,12 @@ hr {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 600px;
-		height: 150px;
+		width: 200px;
+		height: 600px;
 		background-color: #292929;
 		opacity: 0.6;
 		box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+		
 		.clock-item {
 			font-family: 'Share Tech Mono', monospace;
 			position: relative;
@@ -78,7 +79,9 @@ hr {
 			align-items: center;
 			width: 600px;
 			margin: 0 20px;
+			flex-direction: column;
 			div {
+				
 				font-size: 20px;
 				color: #ccc;
 				letter-spacing: 5px;
@@ -106,7 +109,7 @@ hr {
 	.prog {
 		
 		progress{
-			width: 500px;
+			width: 300px;
 			height: 30px;
 			border: none;
 			background-color:#d7d7d7;
@@ -129,7 +132,7 @@ hr {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 700px;
+	width: 350px;
 	height: 10px;
 	margin:10px auto;
 	opacity: 0.8;
