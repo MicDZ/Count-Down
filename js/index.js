@@ -8,9 +8,9 @@ function getQueryVariable(variable){
 	return(false);
 }
 
-var type="Desktop",mode="light";
+var type="Mobile",mode="night";
 
-
+UpdateCss();
 
 window.addEventListener("load", () => {
     const day = document.querySelector(".day");
@@ -20,15 +20,17 @@ window.addEventListener("load", () => {
 	
 
 	if(decodeURI(getQueryVariable("mode"))!="false") mode=getQueryVariable("mode");
-	else mode="light";
+	else mode="night";
 
-	const getTime = () => {
-		
-		if(document.body.clientWidth>=700) type="Desktop";
+	if(document.body.clientWidth>=700) type="Desktop";
 		else type="Mobile";
 		
 		UpdateCss();
-
+	
+	const getTime = () => {
+		
+		
+		
 
 		var EndTime=new Date("2022/06/07 08:00");
 		var name="2022高考";
@@ -82,6 +84,7 @@ function change(a){
     if (a == 2) {
         mode="light";
     }
+	UpdateCss();
 }
 
 function UpdateCss() {
