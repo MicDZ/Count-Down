@@ -1,4 +1,5 @@
 # 2022高考倒计时
+![](https://t.micdz.cn/2022高考.png)
 
 本项目由2019中考倒计时修改得来
 
@@ -28,7 +29,7 @@
 
 [https://t.micdz.cn/?name=2022高考&date=2022/06/07&time=08:00](https://t.micdz.cn/?name=2022高考&date=2022/06/07&time=08:00)
 
-![](https://t.micdz.cn/2022高考.png)
+
 
 获取2021年高考倒计时
 
