@@ -103,7 +103,12 @@ hr {
 				font-size: 20px;
 				color: rgb(248, 191, 191);
 				letter-spacing: 5px;
-				margin-top: 15px;
+				@media screen and (min-width: 700px) {
+					margin-top: 15px;
+				}
+				@media screen and (max-width: 699px) {
+					margin-bottom: 15px;
+				}
 
 			}
 			span {

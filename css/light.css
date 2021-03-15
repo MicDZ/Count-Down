@@ -84,8 +84,13 @@ hr {
         font-size: 20px;
         color: #ccc;
         letter-spacing: 5px;
-        color: #f8bfbf;
-        margin-top: 15px; }
+        color: #f8bfbf; }
+        @media screen and (min-width: 700px) {
+          .container .clock .clock-item div {
+            margin-top: 15px; } }
+        @media screen and (max-width: 699px) {
+          .container .clock .clock-item div {
+            margin-bottom: 15px; } }
       .container .clock .clock-item span {
         font-size: 60px;
         font-weight: 700;
