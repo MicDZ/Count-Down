@@ -14,7 +14,6 @@ body {
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-  min-height: 100vh;
   margin: 0; }
 
 hr {
@@ -52,7 +51,7 @@ hr {
         cursor: pointer; }
     .container .menu .set {
       font-size: 30px;
-      font-weight: 100; }
+      font-weight: 300; }
   .container .clock {
     border-radius: 5px;
     display: flex;
@@ -157,33 +156,5 @@ hr {
   .switch .Light {
     opacity: 0.6;
     cursor: not-allowed; }
-
-.github {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10px;
-  margin: 70px auto;
-  opacity: 0.8; }
-  .github .btn {
-    align-items: center;
-    border-radius: 30px;
-    border: 0.5px solid #555;
-    outline: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 20px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer; }
-  .github .btn:hover {
-    background-color: #555;
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
-  .github .icon {
-    height: 20px; }
 
 /*# sourceMappingURL=light.css.map */

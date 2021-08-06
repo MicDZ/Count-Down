@@ -8,16 +8,17 @@
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/sharetechmono/v10/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
+
 
 body {
-	
+
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
     background-repeat: repeat;
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-    min-height: 100vh;
+
     margin: 0;
 }
 
@@ -31,16 +32,16 @@ hr {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-		justify-content: center;
+	justify-content: center;
 
 	@media screen and (min-width: 700px) {
 		width: 700px;
-	
+
 		height: 320px;
 	}
 	@media screen and (max-width: 699px) {
 		width: 350px;
-	
+
 		height: 650px;
 	}
 
@@ -54,22 +55,22 @@ hr {
 		align-items: center;
 		width: 400px;
 		height: 85px;
-		
+
 		div {
 			font-family: 'Share Tech Mono',monospace;
 			width: 100%;
 			text-align: center;
-			
+
 			span {
 				cursor: pointer;
 			}
 		}
 		.set {
 			font-size: 30px;
-			font-weight: 100;
+			font-weight: 300;
 		}
 	}
-	
+
 	.clock {
 		border-radius: 5px;
 		display: flex;
@@ -112,7 +113,7 @@ hr {
 				@media screen and (max-width: 699px) {
 					margin-bottom: 15px;
 				}
-				
+
 			}
 			span {
 				font-size: 60px;
@@ -120,7 +121,7 @@ hr {
 				color: #fff;
 				letter-spacing: 5px;
 			}
-			
+
 		}
 	}
 	.pass {
@@ -132,16 +133,16 @@ hr {
 		font-weight: 300;
 	}
 	.prog {
-		
+
 		progress{
-		@media screen and (min-width: 700px) {
-			width: 500px;
-			
-		}
-		@media screen and (max-width: 699px) {
-			width: 300px;	
-		}
-		height: 30px;
+			@media screen and (min-width: 700px) {
+				width: 500px;
+
+			}
+			@media screen and (max-width: 699px) {
+				width: 300px;
+			}
+			height: 30px;
 			border: none;
 			background-color:#d7d7d7;
 			border-radius: 5px;
@@ -149,22 +150,21 @@ hr {
 		progress::-webkit-progress-bar{
 			border-radius: 5px;
 			background-color:#d7d7d7;
-	   }
-	   progress::-webkit-progress-value{
+		}
+		progress::-webkit-progress-value{
 			border-radius: 5px;
 			background-color:#292929;
 			opacity: 0.6;
-	   }
+		}
 	}
-	
 }
 .switch {
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	
+
 	@media screen and (min-width: 700px) {
 		width: 700px;
 	}
@@ -175,7 +175,7 @@ hr {
 	margin:10px auto;
 	opacity: 0.8;
 	.btn {
-		
+
 		align-items: center;
 		border-radius: 5px;
 		border: 0.5px solid #555;
@@ -189,7 +189,7 @@ hr {
 		-webkit-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		cursor: pointer;
-		
+
 	}
 	.Night:hover {
 		background-color: #555;
@@ -201,43 +201,5 @@ hr {
 	.Light {
 		opacity: 0.6;
 		cursor: not-allowed;
-	}
-	
-}
-
-.github {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	height: 10px;
-	margin:70px auto;
-	opacity: 0.8;
-	.btn {
-		
-		align-items: center;
-		border-radius: 30px;
-		border: 0.5px solid #555;
-		outline: none;
-		padding: 10px 20px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 18px;
-		margin: 4px 20px;
-		-webkit-transition-duration: 0.4s;
-		transition-duration: 0.4s;
-		cursor: pointer;
-		
-		
-	}
-	.btn:hover {
-		background-color: #555;
-		color: white;
-		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	}
-	.icon {
-		height: 20px;
-		
 	}
 }

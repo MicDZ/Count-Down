@@ -1,78 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title id="title">{{title}}</title>
+    <meta name="author" content="MicDZ">
+    <meta name="description" content="OI">
+    <link rel="stylesheet" href="css/night.css" id="css"/>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title id="title">2022高考倒计时</title>
-        <meta name="author" content="MicDZ">
-        <meta name="description" content="OI">
-        <link rel="stylesheet" href="css/night.css" id="css"/>
-        
-		<script src="js/index.js"></script>
-        <link rel="shortcut icon" href="https://www.micdz.cn/img/h.jpeg">
-    </head>
-    <body>
-        <div class="container">
-            <div class="menu">
-            
-                <div class="set" id="name">
-                </div>
-                
+    <link rel="shortcut icon" href="https://www.micdz.cn/img/h.jpeg">
+    <script src="js/vue.min.js"></script></head>
+<body>
+    <div class="container" id="clock">
+        <div class="menu">
+
+            <div class="set" id="name">
+                {{message}}
             </div>
 
-            <div class="clock">
-                <div class="clock-item">
-
-                    <span class="day">000</span>
-                    <div>天</div>
-                    <span class="hour">00</span>
-                    <div>时</div>
-                    <span class="minute">00</span>
-                    <div>分</div>
-                    <span class="second">00</span>
-                    <div>秒</div>
-                </div>
-                
-                
-                <!-- <div class="clock-item day">
-                    <div>天</div>
-                    <span>000</span>
-                </div>
-                <div class="clock-item hour">
-                    <div>时</div>
-                    <span>00</span>
-                </div>
-                <div class="clock-item minute">
-                    <div>分</div>
-                    <span>00</span>
-                </div>
-                <div class="clock-item second">
-                    <div>秒</div>
-                    <span>00</span>
-                </div> -->
-            </div>
-            
-            <div class="pass">
-                <span>今天已经过去</span>
-                
-            
-                <div class="prog">
-                    <progress id="progress" value="50" max="100"></progress><br>
-                </div>
-                <div class="data"><span>0.00%</span></div>
-            </div>
-
-            
-        </div> 
-
-        <div class="switch">
-            <button onClick="change(1)" class="btn Night">Night</button>
-            <button onClick="change(2)" class="btn Light">Light</button>
         </div>
 
-        
-    </body>
+        <div class="clock">
+            <div class="clock-item">
+                <span class="day">{{day}}</span>
+                <div>天</div>
+                <span class="hour">{{hour}}</span>
+                <div>时</div>
+                <span class="minute">{{minute}}</span>
+                <div>分</div>
+                <span class="second">{{second}}</span>
+                <div>秒</div>
+            </div>
+        </div>
+
+        <div class="pass">
+            <span>今天已经过去</span>
+
+
+            <div class="prog">
+                <progress id="progress" value="50" max="100"></progress><br>
+            </div>
+            <div class="data"><span>{{pass}}</span></div>
+        </div>
+
+
+    </div>
+
+    <div class="switch">
+        <button onClick="change(1)" class="btn Night">Night</button>
+        <button onClick="change(2)" class="btn Light">Light</button>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
 </html>

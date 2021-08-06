@@ -54,7 +54,7 @@ hr {
         cursor: pointer; }
     .container .menu .set {
       font-size: 30px;
-      font-weight: 400; }
+      font-weight: 300; }
   .container .clock {
     border-radius: 5px;
     display: flex;
@@ -104,7 +104,7 @@ hr {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    font-weight: 500; }
+    font-weight: 300; }
   .container .prog {
     background-color: #2C3E50; }
     .container .prog progress {
