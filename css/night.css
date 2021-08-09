@@ -45,7 +45,7 @@ hr {
     width: 400px;
     height: 85px; }
     .container .menu div {
-      font-family: 'Share Tech Mono',monospace;
+      font-family: Helvetica;
       width: 100%;
       text-align: center;
       color: white;
@@ -122,6 +122,10 @@ hr {
       border-radius: 5px;
       background-color: #133347; }
     .container .prog progress::-webkit-progress-value {
+      border-radius: 5px;
+      background-color: #d7d7d7;
+      opacity: 0.6; }
+    .container .prog progress::-moz-progress-bar {
       border-radius: 5px;
       background-color: #d7d7d7;
       opacity: 0.6; }

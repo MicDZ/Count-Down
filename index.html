@@ -7,10 +7,18 @@
     <title id="title">{{title}}</title>
     <meta name="author" content="MicDZ">
     <meta name="description" content="OI">
-    <link rel="stylesheet" href="css/night.css" id="css"/>
+    <link rel="stylesheet" v-bind:href="href" id="css"/>
 
     <link rel="shortcut icon" href="https://www.micdz.cn/img/h.jpeg">
     <script src="js/vue.min.js"></script></head>
+    <script>
+        var css = new Vue({
+            el: '#css',
+            data: {
+                href: 'css/night.css'
+            }
+        })
+    </script>
 <body>
     <div class="container" id="clock">
         <div class="menu">

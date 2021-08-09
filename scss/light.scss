@@ -57,7 +57,7 @@ hr {
 		height: 85px;
 
 		div {
-			font-family: 'Share Tech Mono',monospace;
+			font-family: Helvetica;
 			width: 100%;
 			text-align: center;
 
@@ -155,6 +155,11 @@ hr {
 			border-radius: 5px;
 			background-color:#292929;
 			opacity: 0.6;
+		}
+		progress::-moz-progress-bar {
+			opacity: 0.6;
+			border-radius: 5px;
+			background-color: #292929;
 		}
 	}
 }
