@@ -44,14 +44,14 @@ hr {
     width: 400px;
     height: 85px; }
     .container .menu div {
-      font-family: Helvetica;
+      font-family: 'Share Tech Mono',monospace;
       width: 100%;
       text-align: center; }
       .container .menu div span {
         cursor: pointer; }
     .container .menu .set {
       font-size: 30px;
-      font-weight: 300; }
+      font-weight: 100; }
   .container .clock {
     border-radius: 5px;
     display: flex;
@@ -83,13 +83,8 @@ hr {
         font-size: 20px;
         color: #ccc;
         letter-spacing: 5px;
-        color: #f8bfbf; }
-        @media screen and (min-width: 700px) {
-          .container .clock .clock-item div {
-            margin-top: 15px; } }
-        @media screen and (max-width: 699px) {
-          .container .clock .clock-item div {
-            margin-bottom: 15px; } }
+        color: #f8bfbf;
+        margin-top: 15px; }
       .container .clock .clock-item span {
         font-size: 60px;
         font-weight: 700;
@@ -120,10 +115,6 @@ hr {
     border-radius: 5px;
     background-color: #292929;
     opacity: 0.6; }
-  .container .prog progress::-moz-progress-bar {
-    opacity: 0.6;
-    border-radius: 5px;
-    background-color: #292929; }
 
 .switch {
   display: flex;
@@ -160,5 +151,33 @@ hr {
   .switch .Light {
     opacity: 0.6;
     cursor: not-allowed; }
+
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  margin: 70px auto;
+  opacity: 0.8; }
+  .github .btn {
+    align-items: center;
+    border-radius: 30px;
+    border: 0.5px solid #555;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer; }
+  .github .btn:hover {
+    background-color: #555;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+  .github .icon {
+    height: 20px; }
 
 /*# sourceMappingURL=light.css.map */

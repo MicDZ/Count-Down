@@ -11,17 +11,13 @@
   }
 
 body {
-	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
-    background-repeat: repeat;
+	    background-repeat: repeat;
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-
 	background: #0f3854;
-
 	background-size: 100%;
 }
-
 hr {
 	width: 700px;
 	border-top: 3px dashed #000;
@@ -35,12 +31,12 @@ hr {
 	align-items: center;
 	@media screen and (min-width: 700px) {
 		width: 700px;
-
+	
 		height: 320px;
 	}
 	@media screen and (max-width: 699px) {
 		width: 350px;
-
+	
 		height: 650px;
 	}
 	margin: 30px auto;
@@ -53,9 +49,9 @@ hr {
 		align-items: center;
 		width: 400px;
 		height: 85px;
-
+		
 		div {
-			font-family: Helvetica;
+			font-family: 'Share Tech Mono',monospace;
 			width: 100%;
 			text-align: center;
 			color: rgb(255, 255, 255);
@@ -66,10 +62,10 @@ hr {
 		}
 		.set {
 			font-size: 30px;
-			font-weight: 300;
+			font-weight: 400;
 		}
 	}
-
+	
 	.clock {
 		border-radius: 5px;
 		display: flex;
@@ -102,12 +98,7 @@ hr {
 				font-size: 20px;
 				color: rgb(248, 191, 191);
 				letter-spacing: 5px;
-				@media screen and (min-width: 700px) {
-					margin-top: 15px;
-				}
-				@media screen and (max-width: 699px) {
-					margin-bottom: 15px;
-				}
+				margin-top: 15px;
 
 			}
 			span {
@@ -116,7 +107,7 @@ hr {
 				color: rgb(255, 255, 255);
 				letter-spacing: 5px;
 			}
-
+			
 		}
 	}
 	.pass {
@@ -126,21 +117,21 @@ hr {
 		width: 100%;
 		text-align: center;
 		font-size: 20px;
-		font-weight: 300;
+		font-weight: 500;
 	}
 	.prog {
 		background-color: #2C3E50;
 		progress{
 			@media screen and (min-width: 700px) {
 				width: 500px;
-
+			
 			}
 			@media screen and (max-width: 699px) {
-				width: 300px;
+				width: 300px;	
 			}
 			height: 30px;
 			border: none;
-			background-color:#133347;
+			background-color:#2C3E50;
 			border-radius: 5px;
 		}
 		progress::-webkit-progress-bar{
@@ -152,13 +143,8 @@ hr {
 			background-color:#d7d7d7;
 			opacity: 0.6;
 	   }
-		progress::-moz-progress-bar {
-			border-radius: 5px;
-			background-color:#d7d7d7;
-			opacity: 0.6;
-		}
 	}
-
+	
 }
 .switch {
 	display: flex;
@@ -188,7 +174,7 @@ hr {
 		transition-duration: 0.4s;
 		cursor: pointer;
 		border-radius: 5px;
-
+		
 	}
 	.Light:hover {
 		background-color: #eee;
@@ -196,15 +182,15 @@ hr {
 		opacity: 0.3;
 		box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24),0 17px 50px 0 rgba(255,255,255,0.19);
 		border-radius: 10px;
-
+  
 	}
-
+	  
 	  .Night {
 		opacity: 0.3;
 		cursor: not-allowed;
 	  }
-
-
+	  
+	
 }
 
 
@@ -232,7 +218,7 @@ hr {
 		transition-duration: 0.4s;
 		cursor: pointer;
 
-
+		
 	}
 	.btn:hover {
 		background-color: #eee;

@@ -45,7 +45,7 @@ hr {
     width: 400px;
     height: 85px; }
     .container .menu div {
-      font-family: Helvetica;
+      font-family: 'Share Tech Mono',monospace;
       width: 100%;
       text-align: center;
       color: white;
@@ -54,7 +54,7 @@ hr {
         cursor: pointer; }
     .container .menu .set {
       font-size: 30px;
-      font-weight: 300; }
+      font-weight: 400; }
   .container .clock {
     border-radius: 5px;
     display: flex;
@@ -85,13 +85,8 @@ hr {
       .container .clock .clock-item div {
         font-size: 20px;
         color: #f8bfbf;
-        letter-spacing: 5px; }
-        @media screen and (min-width: 700px) {
-          .container .clock .clock-item div {
-            margin-top: 15px; } }
-        @media screen and (max-width: 699px) {
-          .container .clock .clock-item div {
-            margin-bottom: 15px; } }
+        letter-spacing: 5px;
+        margin-top: 15px; }
       .container .clock .clock-item span {
         font-size: 60px;
         font-weight: 900;
@@ -104,13 +99,13 @@ hr {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    font-weight: 300; }
+    font-weight: 500; }
   .container .prog {
     background-color: #2C3E50; }
     .container .prog progress {
       height: 30px;
       border: none;
-      background-color: #133347;
+      background-color: #2C3E50;
       border-radius: 5px; }
       @media screen and (min-width: 700px) {
         .container .prog progress {
@@ -122,10 +117,6 @@ hr {
       border-radius: 5px;
       background-color: #133347; }
     .container .prog progress::-webkit-progress-value {
-      border-radius: 5px;
-      background-color: #d7d7d7;
-      opacity: 0.6; }
-    .container .prog progress::-moz-progress-bar {
       border-radius: 5px;
       background-color: #d7d7d7;
       opacity: 0.6; }
