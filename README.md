@@ -1,4 +1,4 @@
-# 2022高考倒计时
+# 高考倒计时
 
 本项目由2019中考倒计时修改得来
 
@@ -24,13 +24,8 @@
 
 ## 使用实例
 
-获取2022高考倒计时：
+获取2050高考倒计时：
 
-[https://t.micdz.cn/?name=2022高考&date=2022/06/07&time=08:00](https://t.micdz.cn/?name=2022高考&date=2022/06/07&time=08:00)
+[https://t.micdz.cn/?name=2050高考&date=2050/06/07&time=08:00](https://t.micdz.cn/?name=2050高考&date=2050/06/07&time=08:00)
 
 ![](https://t.micdz.cn/2022高考.png)
-
-获取2021年高考倒计时
-
-
-[https://t.micdz.cn/?name=2021高考&date=2021/06/07&time=08:00](https://t.micdz.cn/?name=2021高考&date=2021/06/07&time=08:00)
